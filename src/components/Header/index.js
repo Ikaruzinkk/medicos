@@ -1,12 +1,11 @@
 "use client";
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import styles from './Header.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -36,3 +35,5 @@ const Header = () => {
 };
 
 export default Header;
+
+
